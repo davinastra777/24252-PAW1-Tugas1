@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Daftar Member</title>
+    <style>
+        body {
+            background-color: #EBE8DB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 350px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<form action="proses.php" method="Post">
+    <h3 class="text-center">Daftar Member</h3>
+    <p class="text-center">Bergabunglah sebagai member di Toko Buku Cerdas dan nikmati berbagai keuntungan eksklusif!</p>
+    
+    <label for="Nama_Lengkap">Nama Lengkap</label>
+    <input type="text" name="Nama_Lengkap" id="Nama_Lengkap" placeholder="Nama Lengkap" class="form-control"> 
+
+    <label for="Email">Alamat Email</label>
+    <input type="email" name="Email" id="Email" placeholder="Email" class="form-control"> 
+
+    <label for="Password">Password</label>
+    <input type="password" name="Password" id="Password" placeholder="Password" class="form-control"> 
+
+    <label for="Nomor_Telepon">Nomor Telepon</label>
+    <input type="tel" name="Nomor_Telepon" id="Nomor_Telepon" placeholder="08xxxxxxxxxx" inputmode="numeric" class="form-control"> 
+
+    <label for="Metode_Pembayaran">Metode Pembayaran</label>
+    <select name="Metode Pembayaran" id="Metode_Pembayaran" class="form-control">
+        <option value="BCA">BCA</option>
+        <option value="BRI">BRI</option>
+        <option value="Gopay">Gopay</option>
+        <option value="Dana">Dana</option>
+        <option value="OVO">OVO</option>
+    </select> 
+    <button type="submit" class="btn btn-success mt-3 w-100">Kirim</button>
+</form>
+
+
+</body>
+</html>
